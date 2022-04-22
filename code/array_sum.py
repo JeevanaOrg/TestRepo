@@ -5,11 +5,23 @@ def input_list():
     lst=[]
     n= int(input("Enter number elements you want to add to list: "))
     for i in range(0,n):
-        num = int(input(f"Enter num {i+1}: "))
-        lst.append(num)
+        try:
+             num = int(input("Enter num : "))
+        # if num is string, raise error. Add only numbers to list
+        # if not isinstance(num, (int, float)):
+        # if num.is_
+            # raise TypeError("Pls enter a valid integer or float")
+        except ValueError:
+            pass
+
+        lst.append(int(num))
+
     return lst
 
 def add_list_ele(list_of_num):
+    if  len(list_of_num) == 0:
+        raise ValueError("Negative list of numbers value error")
+    
     sum = 0
     for i in list_of_num:
         sum = sum + i

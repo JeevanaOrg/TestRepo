@@ -1,0 +1,11 @@
+<interface xmlns="ietf-interfaces">
+    <nameGigabitEthernet2></name>
+    <description>Wide Area Network</description>
+    <enabled>true</enabled>
+    <ipv4>
+        <address>
+            <ip>192.168.1.5</ip>
+            <netmask>255.255.255.0 </netmask>
+        </address>
+    </ipv4>
+</interface>
